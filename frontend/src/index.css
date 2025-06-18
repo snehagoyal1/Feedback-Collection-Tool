@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  color: #222;
+}
+
+.container {
+  max-width: 720px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #3498db;
+}
+
+h2,
+h3 {
+  text-align: center;
+  font-weight: 600;
+  color: #2d3436;
+  margin-bottom: 24px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #b2bec3;
+  background-color: #f9fbfd;
+  transition: all 0.3s ease;
+}
+
+.input\:focus,
+.textarea\:focus {
+  border-color: #3498db;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.btn-primary {
+  display: inline-block;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #3498db, #2980b9);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  margin-bottom: 12px;
+}
+
+.btn-primary\:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(to right, #2980b9, #2471a3);
+}
+
+.rating {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rating .star {
+  font-size: 30px;
+  margin: 0 6px;
+  cursor: pointer;
+  color: #dfe6e9;
+  transition: color 0.2s ease;
+}
+
+.rating .star.active {
+  color: #f1c40f;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  padding: 14px;
+  margin-bottom: 10px;
+  background: #f1f2f6;
+  border-radius: 6px;
+  font-size: 15px;
+  border-left: 4px solid #74b9ff;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+select.input {
+  appearance: none;
+  background-color: #ffffff;
+  background-image: url("data\:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' width='10' height='6'%3E%3Cpath fill='%23999' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+  padding-right: 34px;
+}
+
+::placeholder {
+  color: #95a5a6;
+  font-style: italic;
+}
+
+textarea.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
